@@ -36,6 +36,9 @@ ________________________
 ___________________________
 
 » python3
+
 » pip install animation
+
 » pip install curses
+
 » pip install --upgrade PySimpleGUI
