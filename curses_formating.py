@@ -16,7 +16,7 @@ def main(stdscr, path):
             stdscr.addstr(i, 0, ' '.join([str(elem)for elem in node.state[i]]))
         except:
             stdscr.getkey()
-            print("Veuillez agrandir votre console")
+            print("Please enlarge your console")
             time.sleep(0.9)
             # sys.exit()
             break

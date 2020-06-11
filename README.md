@@ -1,44 +1,42 @@
-
-
-# Fichier d'execution: 
+# Execution file: 
     main.py
 
-# Changement d'instance:
-Pour changer l'instance du problème, il faut, dans le fichier main.py, à la ligne def getInput(id = 0), remplacer la valeur de id par le numéro de l'instance à executer.
-id = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 , 12, 13, 14, 15, 16, 17, 18, 19 }
+# Change of instance:
+To change the instance of the problem, it is necessary, in the main.py file, at the line def getInput(id = 0), to replace the value of id by the number of the instance to execute.
+id = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 , 12, 13, 14, 15, 16, 17, 18, 19 } }.
 
-Exécution du fichier principal main.py:
-A la ligne resultat = processing('DFS_G', inputs), remplacer la valeur entre cotes par l'algorithme de recherche que vous souhaitez exécuter
-BFS_T pour Breadth-First Tree Search
-BFS_G pour Breadth First Graph Search
-DFS_T pour Depth First Tree Search
-DFS_G pour Depth First Graph Search
-UCS_G pour Uniform-Cost Search
-IDS_G pour Iterative Deepening Search
-GS_G pour Greedy Best-First Search
-Astar_G pour Astar Search
+Running the main.py file:
+At the line result = processing('DFS_G', inputs), replace the value between dimensions by the search algorithm you want to execute
+BFS_T for Breadth-First Tree Search
+BFS_G for Breadth First Graph Search
+DFS_T for Depth First Tree Search
+DFS_G for Depth First Graph Search
+UCS_G for Uniform-Cost Search
+IDS_G for Iterative Deepening Search
+GS_G for Greedy Best-First Search
+Astar_G for Astar Search
 
-# Présentation ds résultats
-  Vous disposez de 4 formes de pésentation des résultats
-  * solution en terme de mouvement du robot (decommenter ligne 20 fichier main.py) [print(resultat.solution())]
-  * solution en terme de chemin des différents états du début à la solution  (decommenter ligne 21 fichier main.py) [print(resultat.path())]
-  * solution en graphique console (decommenter ligne 23 fichier main.py) [curses_console_display(resultat.path())]
-    -- veulliez bien agrandir votre cosole pour l'execution afin de voir l'animation de fin:
-  * solution en interface graphique (decommenter ligne 23 fichier main.py) [pySimple_display(resultat.path())]
-    -- pour celui ci le code n'est pas encore bien optimisé donc veuillez patienter pendant son exécution il marche bien une fois demarré
+# Presentation of results
+  You have 4 ways of presenting the results
+  * solution in terms of robot motion (decomment line 20 main.py file) [print(resultat.solution()]
+  * solution in terms of path of the different states from the beginning to the solution (decomment line 21 main.py file) [print(resultat.path()]
+  * console graphics solution (decomment line 23 file main.py) [curses_console_display(resultat.path())]
+    -- please enlarge your cosole for the runtime to see the end animation:
+  * GUI solution (uncomment line 23 main.py file) [pySimple_display(resultat.path()]
+    -- for this one the code is not yet well optimized so please be patient while it is running it works fine once started
 
 NB: 
-  -il est possible de changer les dimentions de tableau dans le fichier 'pick_up_robot' (ligne 12)
-    Et les instances seront adaptées et les "out of range" seront ignoré
+  -it is possible to change the array dimensions in the 'pick_up_robot.py' file (line 12).
+    And the instances will be adapted and the out of range will be ignored.
 
 ________________________
 #environment requirement
 ___________________________
 
-» python3
+"python3
 
-» pip install animation
+"pip install animation
 
-» pip install curses
+"pip install curses
 
-» pip install --upgrade PySimpleGUI
+"pip install --upgrade PySimpleGUI

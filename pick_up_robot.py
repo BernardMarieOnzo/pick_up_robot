@@ -7,12 +7,10 @@ import animation
 import time
 import sys
 
-
 class PickUpRobot(Problem):
     def __init__(self, dataset, dimention = [9, 9]):
-        """ Dimention est un tableau a 2 dimention en perspective 
-        nous voudrions aller vers un tableau à 3 dimention mais 
-        hors du contest de ce tp ;)
+        """ Dimention is a 2-dimensional perspective table 
+        we'd like to go to a 3-dimensional;)
         """
         if (isinstance(dimention, int)):
             dimention = [dimention, dimention]
@@ -254,13 +252,11 @@ def processing(algo='Astar_G', inputs=defaultInput):
     
 
 
-
-
 def display_node(node):
         for row in node:
             print(' '.join([str(elem) for elem in row]))
         return
 
 
-# resultat = processing()
-# print(resultat.solution)
+# result = processing()
+# print(result.solution)
